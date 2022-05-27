@@ -103,5 +103,14 @@ declare namespace Cypress {
     realMouseMove: NormalizeCypressCommand<
       typeof import("./commands/mouseMove").realMouseMove
     >;
+    /**
+    * Fires native system dragOver event.
+    * Drags over the element
+    * @example
+    * cy.get("button").realDrag()
+    */
+    realDrag: NormalizeCypressCommand<
+      typeof import("./commands/realDrag").realDrag
+    >;
   }
 }
