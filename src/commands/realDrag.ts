@@ -29,7 +29,6 @@ export async function realDrag(
   const basePosition= getCypressElementCoordinates(
     subject,
     "topLeft",
-    options.scrollBehavior
   );
   const elem = subject.get(0).outerHTML;
 
