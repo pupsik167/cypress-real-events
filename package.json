@@ -5,7 +5,7 @@
   "author": "Dmitriy Kovalenko",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "npx --package typescript tsc --init",
     "postinstall": "yarn build",
     "lint": "yarn eslint './{src,cypress}/**/*.ts'",
     "release": "yarn build && yarn version && node scripts/release.js && yarn publish dist",
